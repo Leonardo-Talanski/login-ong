@@ -1,41 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body { 
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
 }
 
-:root {
-    font-size: 62.5%;
-}
-
-aside h1 {
-    font-size: 64px;
-    font-weight: 500;
-    line-height: 75px;
-}
-
-aside h1 span {
-    color: #FF5678;
-}
-
-img {
-    width: 90rem;
+.content {
+    
+    display: grid;
+    grid-template-areas: 
+    ". . . . . "
+     ". hero . form ."
+     ". hero . form ."
+     ". . . . ."
+    ;
+    gap: 8.5rem;
 }
 
 main {
-    width: 60rem;
-    height: 52rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.95);
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+aside h1 {
+    display: flex;
+    justify-content: center;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 75px;
+}
+
+aside h1 span,
+main h2 span {
+  color: #ff5678;
+}
+
+img {
+  width: 70rem;
+}
+
+main {
+  width: 60rem;
+  height: 52rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.15);
+  padding: 4.4rem 5.7rem;
+  border-radius: 1.2rem;
 }
 
 main h2 {
-    max-width: 43rem;
-    font-size: 3.0rem;
-    font-weight: 500;
+  max-width: 43rem;
+  font-size: 3rem;
+  font-weight: 500;
 }
+
+main .actions {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main .actions a {
+  border-radius: 1.2rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  height: 5.5rem;
+  background-color: #35e6e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 5.4rem;
+}
+
+main .actions a + a {
+  background-color: #ff5678;
+  margin-top: 4.8rem;
+}
+
+main footer p {
+font-size: 1.6rem;
+margin-top: 8rem;
+}
+
+main footer a {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    color: black;
+}
+
