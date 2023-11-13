@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-aside h1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
     font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+aside h1 {
     font-size: 64px;
     font-weight: 500;
     line-height: 75px;
@@ -12,5 +25,17 @@ aside h1 span {
 }
 
 img {
-    width: 900px;
+    width: 90rem;
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.95);
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.0rem;
+    font-weight: 500;
 }
