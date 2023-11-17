@@ -10,25 +10,36 @@
 <body>
     <div class="content">
         <aside>
-            <img src="assets/hero.png" alt="logo-principal">
+            <img src="assets/hero2.png" alt="logo-principal">
 
-            <!-- <h1><span>We</span> Form</h1> -->
+            <h1><span>We</span> Form</h1>
         </aside>
         
         <main>
-            <h2>Cadastre sua <span>entidade</span> ou acesse dados <span>de parceiros</span></h2>
+            <a href="index.html"> 
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <h2>Nova <span>entidade</span></h2>
+
+            <form>
+                <label for="input-name">Nome</label>
+                <input type="text" id="input-name">
+
+                <label for="input-field">Campos de Atuação</label>
+                <input type="text" id="input-field">
+
+                <label for="input-points">Pontos de Coleta</label>
+                <input type="text" id="input-points">
+                <button>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+
+            </form>
 
             <div class="actions ">
-                <a href="">Cadastrar entidade</a>
-                <a href="">Ver entidades cadastradas</a>
+                <a href="">Cadastrar</a>
             </div>
-
-           <footer>
-            <p>Sua entidade não se enquadra nos campos de atuação disponíveis</p>
-            <a href="">Registrar novo campo de atuação</a>
-        </main>
-            </footer>
-        
+        </main>  
     </div>
 </body>
 </html>
