@@ -147,9 +147,9 @@ main form .select-div {
 }
 
 main form .select-div::after {
-   top: 1.2rem;
-   right: 1.2rem;
-   font-size: 2.4rem;
+   top: 1.6rem;
+   right: 1.6rem;
+   font-size: 2.2rem;
    content: "\f107";
    font-family: "Font Awesome 6 Free";
    font-weight: 600;
