@@ -1,4 +1,4 @@
-<h1 align="center">Cadastro ONG - Exercício Lets Code</h1>
+<h1 align="center">Telas de Cadastro e Login ONG</h1>
 
 # Objetivo
 
