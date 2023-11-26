@@ -142,8 +142,20 @@ main form select {
   appearance: none;
 }
 
-main form select::after {
-   
+main form .select-div {
+   position: relative;
+}
+
+main form .select-div::after {
+   top: 1.2rem;
+   right: 1.2rem;
+   font-size: 2.4rem;
+   content: "\f107";
+   font-family: "Font Awesome 6 Free";
+   font-weight: 600;
+   position: absolute;
+   z-index: 1;
+   color: #35e6e9;
 }
 
 main form input + button {
